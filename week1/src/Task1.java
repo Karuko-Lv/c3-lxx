@@ -11,9 +11,9 @@ public class Task1 {
         double weight = in.nextDouble();
         System.out.println("输入身高(m):");
         double height = in.nextDouble();
-        BMI(weight,height);
+        getBMI(weight,height);
     }
-    public static void BMI(double weight,double height){
+    public static void getBMI(double weight,double height){
         double BMI = weight/(height*height);
         if(BMI < 18.5){
             System.out.println("过轻");
