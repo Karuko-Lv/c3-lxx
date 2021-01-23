@@ -10,8 +10,8 @@ public class Task5 {
         Scanner in = new Scanner(System.in);
         int radius = in.nextInt();
         circle.setRadius(radius);
-        System.out.println("the area is" + circle.area());
-        System.out.println("the perimeter is" + circle.perimeter());
+        System.out.println("the area is " + circle.area());
+        System.out.println("the perimeter is " + circle.perimeter());
     }
 }
 class Circle{
