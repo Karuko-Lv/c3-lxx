@@ -10,23 +10,20 @@ public class Task5 {
         Scanner in = new Scanner(System.in);
         int radius = in.nextInt();
         circle.setRadius(radius);
-        System.out.println("the area is " + circle.area());
-        System.out.println("the perimeter is " + circle.perimeter());
+        System.out.printf("the area is %.2f\n" ,circle.area());
+        System.out.printf("the perimeter is %.2f" , circle.perimeter());
     }
 }
 class Circle{
     private double radius;
-    private double pi = 3.14;
     public double getRadius() {
         return radius;
     }
     public void setRadius(double radius) {
         this.radius = radius;
     }
-    public double area(){
-        return radius*radius*pi;
-    }
+    public double area(){ return radius*radius*Math.PI; }
     public double perimeter(){
-        return radius*2*pi;
+        return radius*2*Math.PI;
     }
 }
