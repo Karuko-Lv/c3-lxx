@@ -61,6 +61,13 @@ class ComplexNumber{
 
     @Override
     public String toString() {
-        return x + "+" + y +"i";
+        if(x != 0 && y != 0){
+            return x + "+" + y +"i";
+        }else if(x!=0 && y==0){
+            return x + "";
+        }else{
+            return 0 + "";
+        }
+
     }
 }
