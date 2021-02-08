@@ -5,4 +5,6 @@ package Task9;
  * @date 2021/2/8-22:20
  */
 public interface Universe {
+    abstract void doAnything();
+
 }
