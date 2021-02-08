@@ -13,13 +13,13 @@ import java.util.Scanner;
  */
 public class Task2 {
     public static void main(String[] args) {
-        System.out.println("输入您想比较的字符串个数：");
+        System.out.print("输入您想比较的字符串个数：");
         Scanner in = new Scanner(System.in);
         int num = in.nextInt();
         String[] strings = new String[num];
         System.out.print("输入您想比较的字符串：");
         for(int i = 0; i < num; i++){
-            strings[i] = in.next();//不用nextLine（）->why?????
+            strings[i] = in.next();//TODO:不用nextLine（）->why?????
         }
         System.out.println(longestCommonPrefix(strings));
     }
@@ -31,16 +31,17 @@ public class Task2 {
         for(int i = 0;i<strs.length;i++){
             int j = 0;//为了后面substring用
             for(;j<temp.length()&&j<strs[i].length();j++){
-                if(temp.charAt(j)!=strs[i].charAt(j)){//String类的新方法charAt()
+                if(temp.charAt(j)!=strs[i].charAt(j)){//String类的新方法charAt()  get√
                     break;
                 }
             }
-            temp = temp.substring(0,j);
+            temp = temp.substring(0,j);//新知识get√
         }
         if(temp.length() == 0){
             System.out.println("输入不存在公共前缀");
         }
         return temp;
     }
+    //TODO:另一种方法
 }
 
