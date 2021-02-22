@@ -25,7 +25,8 @@ public class Manager {
 
     @Override
     public String toString() {
-        return "|  " + Id + "\t|  " + Name + "\t|  " + Salary + "  |\t" + ManagerId + "\t|  " + "  \n";//这里有新知识的学习！！！
+        Name = String.format("%5s",Name);
+        return "|" + Id + "\t|"  + Name + "  | " + Salary + "  |\t" + ManagerId + "\t|  " + "  \n";//这里有新知识的学习！！！
         //TODO:新知识的学习
     }
 }
