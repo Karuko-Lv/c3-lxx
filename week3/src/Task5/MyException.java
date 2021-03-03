@@ -25,11 +25,5 @@ public class MyException extends Exception{
         System.out.println("出现了我的异常");
     }
 
-    public static void main(String[] args) {
-        try{
-            new MyException().throwException();
-        } catch (MyException e) {
-            e.printStackTrace();
-        }
-    }
+
 }
