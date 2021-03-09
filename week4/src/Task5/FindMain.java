@@ -23,8 +23,8 @@ public class FindMain {
 //             ) {
 //
 //        }
-        for (Integer i:map.keySet()) {
-            if(map.get(i)>nums.length/2){
+        for (Integer i:map.keySet()) {//TODO：map遍历
+            if(map.get(i)>nums.length/2){//get()是得到value
                 return i;
             }
         }
